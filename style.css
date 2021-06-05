@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;1,200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+body{
+    background-color: #552d2d;
+    color: white;
+    font-weight: 500;
+    display: flex;
+    min-height: 100vh;
+}
+main{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+main.social-media{
+    display: flex;
+    align-content: center;
+}
+main h1{
+    color: #fe8f80;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+main .social-media a{
+    text-decoration: none;
+}
+main .social-media img{
+    width: 36px;
+    margin-right: 3rem; 
+    margin-left: 3rem;
+    margin: 3vh;
+}
+main main .social-media a:first-child img{
+    margin-left: 1rem;
+}
+main .alternative {
+    margin-top: 1rem;
+}
+main .alternative span {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.3) ;
+    position: relative;
+}
+main .alternative span::before, main .alternative span::after{
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: 100px;
+    bottom: 50%;
+    right: 50px;
+    background: rgba(255, 255, 255, 0.3) ;
+  
+}
+main .alternative span::after{
+    left: 50px;
+}
+main form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main form label {
+    display:flex;
+    flex-direction: column;
+}
+main form label span {
+    font-size: 1.1rem;
+    margin-top: 2rem;
+}
+
+main form input {
+    background: #231616 ;
+    width: 350px;
+    height: 50px;
+    padding: 0 0.5rem;
+    margin-top: 1rem;
+    outline:rgb(255, 93, 255);
+    color: #f8c5c5;
+    font-size: 1rem;
+    border: 1px solid #040B18;
+    border-radius: 8px;
+}
+main form input[type= "submit"] {
+    cursor: pointer;
+    width: 60%;
+    margin-top: 3rem;
+    border-radius: 32px;
+    background: #fc8585;
+    color: rgb(90, 52, 1);
+    font: 1.1rem;
+    transition: all .3s ease-in-out;
+}
+main form input[type= "submit"]:hover {
+    background: #d45263;
+}
+section.images {
+    display: flex;
+    align-items: flex-end;
+    padding: 4rem; 
+}
+section.images img {
+    width: 120%;
+}
+section.images .circle{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top:0;
+    left: 0;
+    background: linear-gradient(45deg, #ffcebd, #f86565);
+    clip-path: circle(50% at right 75%);
+    z-index: -1;
+}
